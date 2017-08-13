@@ -1,3 +1,8 @@
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.ota.romname=Validus-j5lte \
+    ro.ota.version=$(shell date +%F%H | sed s@-@@g) \
+    ro.ota.manifest=https://basketbuild.com/uploads/devs/tioguda/Validus/j5lte/7.1.2/j5lte.xml
+
 #Inherit from vendor
 $(call inherit-product-if-exists, vendor/samsung/j5lte/j5lte-vendor.mk)
 
