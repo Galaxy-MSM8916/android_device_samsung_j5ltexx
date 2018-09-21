@@ -11,3 +11,7 @@ LOCAL_PATH := device/samsung/j5lte
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+# RIL
+PRODUCT_PACKAGES += \
+	rild_dsds.rc
